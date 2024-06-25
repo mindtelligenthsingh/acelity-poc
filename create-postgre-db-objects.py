@@ -5,8 +5,8 @@ db_params = {
     'dbname': 'postgres',
     'user': 'patient',
     'password': 'patient',
-    'host': 'localhost',
-    'port': '543'
+    'host': '73.220.64.180',
+    'port': '5432'
 }
 
 # Read the DDL script from the file
