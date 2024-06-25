@@ -1,13 +1,14 @@
-CREATE TABLE consultants(
-  id serial NOT NULL,
-  first_name varchar(100) NOT NULL,
-  last_name varchar(100) NOT NULL,
-  email varchar(200),
-  departments_id integer NOT NULL,
-  contract_date date
-    CONSTRAINT check_contract_date CHECK ((contract_date <= CURRENT_DATE)),
-  CONSTRAINT consultants_pkey PRIMARY KEY(id),
-  CONSTRAINT email UNIQUE(email)
-);
+CREATE FUNCTION hello_world()
+RETURNS text AS
+$$
+DECLARE
+  output  VARCHAR(20);
+BEGIN
+  /* Query the string into a local variable. */
+  SELECT 'Hello World!' INTO output;
 
-CREATE INDEX consultants_last_name_idx ON consultants(last_name);
+  /* Return the output text variable. */
+  RETURN output;
+
+END
+$$ LANGUAGE plpgsql;
