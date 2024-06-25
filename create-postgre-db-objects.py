@@ -6,7 +6,7 @@ db_params = {
     'user': 'patient',
     'password': 'patient',
     'host': 'localhost',
-    'port': '5432'
+    'port': '543'
 }
 
 # Read the DDL script from the file
