@@ -43,7 +43,7 @@ jobs:
           POSTGRES_DB: postgres
           POSTGRES_USER: patient
           POSTGRES_PASSWORD: patient
-          POSTGRES_HOST: localhost
+          POSTGRES_HOST: 73.220.64.180
           POSTGRES_PORT: 5432
         run: |
           python create-postgre-db-objects.py
