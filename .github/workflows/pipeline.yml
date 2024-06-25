@@ -47,3 +47,7 @@ jobs:
           POSTGRES_PORT: 5432
         run: |
           python create-postgre-db-objects.py
+
+    
+        working-directory: .
+
