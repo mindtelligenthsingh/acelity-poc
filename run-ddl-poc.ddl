@@ -5,7 +5,7 @@ DECLARE
   output  VARCHAR(20);
 BEGIN
   /* Query the string into a local variable. */
-  SELECT 'Hello World!' INTO output;
+  SELECT 'Hello World! of CI/CD' INTO output;
  
   /* Return the output text variable. */
   RETURN output;
