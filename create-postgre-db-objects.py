@@ -5,7 +5,7 @@ db_params = {
     'dbname': 'postgres',
     'user': 'patient',
     'password': 'patient',
-    'host': '73.220.64.180',
+    'host': 'localhost',
     'port': '5432'
 }
 
