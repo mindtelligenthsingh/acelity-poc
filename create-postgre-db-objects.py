@@ -26,7 +26,7 @@ def execute_ddl_script(ddl_script, db_params):
         # Commit the changes
         connection.commit()
 
-        print("DDL script to create function executed successfully.")
+        print("DDL script to create functions executed successfully.")
 
     except Exception as error:
         print(f"Error executing DDL script: {error}")
