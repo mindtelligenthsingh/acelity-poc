@@ -13,4 +13,11 @@ BEGIN
 END
 $$ LANGUAGE plpgsql;
 
+CREATE TABLE cars (
+  brand VARCHAR(255),
+  model VARCHAR(255),
+  year INT
+);
 
+insert into cars(brand, model, year) values('HONDA', 'CIVIC', 1996);
+insert into cars(brand, model, year) values('HONDA', 'ACCORD', 2000);
